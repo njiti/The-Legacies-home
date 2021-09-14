@@ -229,6 +229,10 @@ body{
     display: flex;
     grid-template-columns: repeat(auto-fit,minmax(300px, auto));
     gap: 11px;
+    overflow-x: scroll;
+}
+.main-posts::-webkit-scrollbar {
+    display: none;
 }
 .post-box {
     width: 300px;
@@ -280,4 +284,26 @@ body{
 .likes span {
     font-size: 14px;
     margin-left: 7px;
+}
+.post-box video {
+    width: 150%;
+    height: 344px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.post-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #e2336b;
+    border-radius: 50%;
+}
+.post-video video {
+    width: 27px;
+    height: 27px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: center;
 }
